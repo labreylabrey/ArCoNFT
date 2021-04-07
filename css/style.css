@@ -1,0 +1,223 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1.5;
+  color: #222222;
+  background-color: #ffffff;
+  text-align: left;
+  overflow: hidden;
+}
+
+h2 {
+  padding-left: 25px;
+}
+
+.arrow {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  left: 75%;
+  top: -1%;
+}
+
+.binary {
+  position: fixed;
+  bottom: 0;
+  width: 70%;
+  height: auto;
+  padding: 20px;
+}
+
+.author {
+  position: fixed;
+  margin: 0 auto;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 20px 0px 20px 0px;
+  font-size: 0.8em;
+}
+
+.middle {
+  width: 50%;
+  float: right;
+}
+
+form {
+text-align: left;
+line-height: 3em;
+padding-left: 20px;
+padding-right: 30px;
+}
+
+.container {
+  margin-left: 25px;
+  padding: 10px;
+  max-width: 85%;
+  background-color: #2e2e2e;
+  opacity: 70%;
+}
+
+.img-container {
+ max-width: 80%;
+ margin: 10px;
+}
+
+.copy {
+  text-align: left;
+  font-size: 0.9em;
+  padding-left: 5px;
+  max-width: 80%;
+  color: white;
+}
+
+.box {
+  display: block;
+  width: 92%;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  line-height: 1em;
+  padding-left: 5px;
+}
+
+input[placeholder] {
+  font-size: 0.9em;
+}
+
+input[type="submit"].btn:hover {
+background: -webkit-linear-gradient(left, orange , green, cyan, blue, violet);
+background: -o-linear-gradient(right, orange, green, cyan, blue, violet);
+background: -moz-linear-gradient(right, orange, green, cyan, blue, violet);
+background: linear-gradient(to right, orange , green, cyan, blue, violet);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+/* =================================
+  Media Queries 768px
+==================================== */
+
+@media (min-width: 768px) {
+  html,
+  body {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  }
+
+.container {
+  max-width: 60%;
+}
+
+.copy {
+  font-size: 1em;
+  padding-left: 5px;
+  max-width: 70%;
+  color: white;
+}
+
+.arrow {
+  max-width: 20%;
+  position: absolute;
+  left: 75%;
+  top: -1%;
+}
+
+.box {
+  width: 50%;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  line-height: 1em;
+}
+
+.binary{
+  max-width: 50%;
+  }
+
+.middle {
+  width: 35%;
+  float: right;
+  }
+
+input[placeholder] {
+  font-size: 1em;
+    }
+}
+
+/* =================================
+  Media Queries 1024px
+==================================== */
+
+@media (min-width: 1024px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: auto;
+    min-height: inherit;
+  }
+
+  .box {
+    width: 35%;
+  }
+
+  .binary{
+    max-width: 30%;
+  }
+
+}
+
+/* =================================
+  Media Queries 1400px
+==================================== */
+
+@media (min-width: 1400px) {
+ .container {
+   max-width: 1600px;
+   overflow: hidden;
+ }
+ .container {
+   max-width: 50%;
+  }
+
+  .author {
+    position: fixed;
+    margin: 0 auto;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px 20px 0px;
+    font-size: 0.8em;
+  }
+
+  form {
+    padding-left: 35px;
+  }
+}
+
+/* =================================
+  Media Queries 1800px
+==================================== */
+
+@media (min-width: 1800px) {
+ .container {
+   max-width: 2000px;
+   margin: 0 auto;
+   left: 30%;
+   font-size: 1.3em;
+   overflow: hidden;
+  }
+}
